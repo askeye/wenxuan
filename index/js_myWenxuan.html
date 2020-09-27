@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的订单</title>
+    <link rel="stylesheet" href="./css/c-head.css">
+    <link rel="stylesheet" href="./css/js_myWenxuan.css">
+    <link rel="shortcut icon" href="https://pic.liesio.com/2020/09/16/e7c4e908c32e8.ico">
+    <link rel="bookmark" href="https://pic.liesio.com/2020/09/16/e7c4e908c32e8.ico">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <script src="./js/lazy.js"></script>
+    <script src="./js/plugon.js"></script>
+    <script src="./js/classify.js"></script>
+</head>
+
+<body>
+    <div class="c_layout">
+        <header class="c_top">
+            <!-- 顶部导航 -->
+            <div class="w_top_w box">
+                <div class="c_top_n c_position" id="c_top_1">
+                    <div class="c_top_nav c_content">
+                        <ul class="c_link_left">
+                            <li id='w_user_welcom'>欢迎光临文轩网！</li>
+                            <li>
+                                <a href="./b_login.html" id='w_go' style="float: left;">请<span>&nbsp;&nbsp;登录</span></a>
+                                <a href="./b_sign-up.html" id="w_sign" style="float: left;">免费注册</a>
+                                <a href="./js_myWenxuan.html" id='w_username' style="float: left;margin-right: 20px;"></a>
+                                <a href="javascript:void(0)" id='w_quit'>退出登录</a>
+                            </li>
+                        </ul>
+                        <ul class="c_link_right">
+                            <li class="c_li_1">
+                                <a href="js_myWenxuan.html">
+                                    <span>我的文轩</span>
+                                    <i class="iconfont icon-jiantou"></i>
+                                </a>
+                                <div class="c_pop">
+                                    <ul class="c_pop_item">
+                                        <li class="c_item_list">
+                                            <a href="js_myWenxuan.html">我的订单</a>
+                                        </li>
+                                        <li class="c_item_list">
+                                            <a href="./b_account.html" id="w_count">账号设置</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="c_li_2">
+                                <a href="./z_index.html">
+                                    <span>企业采购</span>
+                                </a>
+                            </li>
+                            <li class="c_li_3">
+                                <a href="#">
+                                    <span>客户服务</span>
+                                    <i class="iconfont icon-jiantou"></i>
+                                </a>
+                                <div class="c_pop">
+                                    <ul class="c_pop_item">
+                                        <li class="c_item_list">
+                                            <a href="./w_robat.html">在线客服</a>
+                                        </li>
+                                        <li class="c_item_list">
+                                            <a href="./y_help.html">帮助中心</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="c-li_4">
+                                <a href="#">
+                                    <span>手机文轩</span>
+                                    <i class="iconfont icon-jiantou"></i>
+                                </a>
+                                <div class="c_pop c_pop_s">
+                                    <div class="c_pop_item">
+                                        <img src="https://static.winxuancdn.com/css/v2/images/m143.jpg" alt="">
+                                        <a href="#">扫一扫&nbsp;&nbsp;文轩手机购物></a>
+                                    </div>
+                                    <div class="c_pop_item">
+                                        <img src="https://static.winxuancdn.com/css/v2/images/code2.png" alt="">
+                                        <a href="#">电子书&nbsp;&nbsp;客户端></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="w_top_wrap">
+        <div class="w_top_content">
+            <div class="w_top_logo">
+                <a href="./c_head.html">
+                    <img src="https://static.winxuancdn.com/css/v2/images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="w_top_ul">
+                <ul>
+                    <li class="w_top_item"><a href="js_myWenxuan.html">我的文轩</a></li>
+                    <li class="w_top_item"><a href="b_account.html">账号设置</a></li>
+                    <li class="w_top_item"><a href="./address.html">管理收货地址</a></li>
+                    <li class="w_top_item"><a href="./w_robat.html">在线客服</a></li>
+                </ul>
+            </div>
+
+            <!-- 购物车 -->
+            <div class="w_top_cart">
+                <a href="./b_car.html" target="_blank">
+                    <div class="w_top_cart_wrap">
+                        <b></b>
+                        <label class="w_cart">购物车</label>
+                        <span class="w_outline"></span>
+                        <span class="w_outline"></span>
+                        <span class="w_overlayout"></span>
+                        <div class="w_cart_num" id="num"> 0 </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="js_content">
+            <!-- 左边列表内容部分 -->
+            <div class="js_ctt_left">
+                <div class="js_line"></div>
+                <ul class="js_list">
+                    <li class="js_list_title">账号设置</li>
+                    <li class="js_list_item"><a href="./address.html">收货地址</a></li>
+                    <li class="js_list_item"><a href="./b_account.html">账号设置</a></li>
+                </ul>
+                <div class="js_line"></div>
+                <ul class="js_list">
+                    <li class="js_list_title">资产中心</li>
+                    <li class="js_list_item"><a href="./z_index.html">购书卡</a></li>
+                </ul>
+                <div class="js_line"></div>
+                <ul class="js_list">
+                    <li class="js_list_title">商品记录</li>
+                    <li class="js_list_item"><a href="./z_collect.html">收藏的商品</a></li>
+                </ul>
+
+                <div class="js_line"></div>
+                <ul class="js_list">
+                    <li class="js_list_title">帮助中心</li>
+                    <li class="js_list_item"><a href="./w_robat.html">在线客服</a></li>
+                    <li class="js_list_item"><a href="./y_help.html">帮助中心</a></li>
+                </ul>
+                <div class="js_line"></div>
+            </div>
+            <!-- 右边内容部分 -->
+            <div class="js_ctt_right">
+                <!-- 头部信息 -->
+                <div class="js_head">
+                    <div class="js_head_left">
+                        <div class="js_head_img">
+                            <img src="https://static.winxuancdn.com/frontstatic/mobile/dist/img/logo.png" alt="">
+                            <div class="js_mask">
+                                <p>
+                                    <a href="https://www.winxuan.com/front/customer/account">编辑资料</a>
+                                </p>
+                            </div>
+                        </div>
+                        <p class="js_user">文轩网用户</p>
+                        <p class="js_user_desc" id="w_user_get"></p>
+                    </div>
+                    <div class="js_head_right">
+                        <ul>
+                            <li class="js_title">可用暂存款(元)<span></span></li>
+                            <li class="js_rmb">0.00</li>
+                            <li class="js_a">
+                                <a href="">明细</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="js_title">可用购书卡(张)<span></span></li>
+                            <li class="js_desc">0</li>
+                            <li class="js_a">
+                                <a href="">去绑卡</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="js_title">可用礼券<span></span></li>
+                            <li class="js_desc">0</li>
+                            <li class="js_a">
+                                <a href="">领券</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="js_title">可用积分<span></span></li>
+                            <li class="js_desc">0</li>
+                            <li class="js_a">
+                                <a href="">查看</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 我的收藏 -->
+                <div class="js_collection">
+                    <div class="js_tags">
+                        <div class="js_tag">我的收藏</div>
+                        <a href="./z_collect.html" class="js_more js_red">更多收藏 ></a>
+                    </div>
+                    <div class="js_collection_null">
+                        <img src="./img/null.png" alt="">
+                        <p>您买的东西太少了，这里都是空空的，快去挑选适合的商品吧！</p>
+                    </div>
+                    <div class="js_good_books" id="js_good_books">
+                        <!-- <div class="js_good_book">
+                            <img src="https://img2.winxuancdn.com/3454/1201703454_0_2_800x800.jpg?1541161306141&imageMogr2/thumbnail/160x160" alt="">
+                            <a href="//item.winxuan.com/1201723885">窗边的小豆豆（中文简体版） </a>
+                            <div class="js_author">(日)黑柳彻子 著;(日)岩崎千弘 图;赵玉皎 译 </div>
+                            <div class="js_price">
+                                <div class="js_new">￥29.60</div>
+                                <div class="js_old">￥39.50</div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const w_user_get = document.getElementById('w_user_get');
+
+        window.onload = function() {
+            // 导航上的登录接口 start
+            const w_go = document.getElementById('w_go');
+            const w_sign = document.getElementById('w_sign');
+            const w_username = document.getElementById('w_username');
+            const w_quit = document.getElementById('w_quit');
+            const w_user_welcom = document.getElementById('w_user_welcom');
+            const w_count = document.getElementById('w_count');
+            if (localStorage.getItem('admin') == null) {
+                w_go.style.display = 'block';
+                w_sign.style.display = 'block';
+                w_quit.style.display = 'none';
+                w_username.style.display = 'none';
+            } else {
+                var w_user_txt = localStorage.getItem('admin')
+                w_go.style.display = 'none';
+                w_sign.style.display = 'none';
+                w_quit.style.display = 'block';
+                w_username.style.display = 'block';
+                w_username.innerHTML = w_user_txt;
+                w_user_welcom.innerHTML = '您好';
+            }
+            w_username.onclick = function() {
+                w_username.href = './js_myWenxuan.html?admin=' + w_user_txt;
+            }
+            w_count.onclick = function() {
+                w_count.href = './b_account.html?admin=' + w_user_txt;
+            }
+        }
+
+
+
+        w_quit.onclick = function() {
+            w_go.style.display = 'block';
+            w_sign.style.display = 'block';
+            w_quit.style.display = 'none';
+            w_username.style.display = 'none';
+            localStorage.removeItem('admin');
+            var nums11 = document.querySelector('#num');
+            var sum11 = function() {
+                if (localStorage.getItem('admin') == null) {
+                    // console.log('没有登陆');
+                    nums11.style.opacity = '0'
+                } else {
+                    var admin = localStorage.getItem('admin')
+                        // console.log('已登陆');
+                    fetch('http://localhost:3000/car_num?user=' + admin).then(response => {
+                        return response.json()
+                    }).then(res => {
+                        // console.log(res[0].nums);
+                        nums11.innerHTML = res[0].nums
+                    }).catch(err => {
+                        console.log(err)
+                    })
+                }
+            }
+
+            sum11();
+        }
+
+        // 导航上的登录接口 end
+
+
+
+
+        if (localStorage.getItem('admin') == '') {
+            w_user_get.innerHTML = '请登录';
+        } else if (localStorage.getItem('admin') != '') {
+            var w_user_name = localStorage.getItem('admin')
+            w_user_get.innerHTML = w_user_name;
+        }
+
+
+
+        function get(url, key) {
+            return new Promise((resolve, reject) => {
+                var xhr = new XMLHttpRequest()
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        resolve(JSON.parse(xhr.responseText))
+                    } else if (xhr.readyState === 4 && xhr.status === 404) {
+                        reject()
+                    }
+                }
+                xhr.open('GET', url + (key == undefined ? '' : `?keyword=${key}`), true)
+                xhr.send()
+            })
+        }
+        //获取收藏的书籍
+        function getData2(key, el) {
+            get('http://localhost:3000/js_collection').then(res => {
+                // console.log(res)
+                el.innerHTML = ''
+                res.data.forEach(item => {
+                    el.innerHTML += `
+                <div class="js_good_book">
+                        <img class="lazyload" data-src="${item.img}" alt="">
+                        <a href="${item.title_url}">${item.title}</a>
+                        <div class="js_author">${item.author}</div>
+                        <div class="js_price">
+                            <div class="js_new">${item.new}</div>
+                            <div class="js_old">${item.old}</div>
+                        </div>
+                    </div>
+                `
+                })
+            }).catch(err => {
+                console.log(err)
+
+            })
+        }
+        var collection = document.querySelector('.js_collection .js_good_books');
+        getData2('collection', collection);
+
+        // 购物车小图标数字
+        var nums11 = document.querySelector('#num');
+        var sum11 = function() {
+            if (localStorage.getItem('admin') == null) {
+                // console.log('没有登陆');
+                nums11.style.opacity = '0'
+            } else {
+                var admin = localStorage.getItem('admin')
+                    // console.log('已登陆');
+                fetch('http://localhost:3000/car_num?user=' + admin).then(response => {
+                    return response.json()
+                }).then(res => {
+                    // console.log(res[0].nums);
+                    nums11.innerHTML = res[0].nums
+                }).catch(err => {
+                    console.log(err)
+                })
+            }
+        }
+
+        sum11();
+
+        var w_admins = localStorage.getItem('admin');
+        console.log(w_admins);
+        var js_good_books = document.getElementById('js_good_books');
+        console.log(js_good_books);
+
+        if (w_admins != '') {
+            console.log(1234);
+            fetch(`http://localhost:3000/pz_collection?admin=${w_admins}`).then(response => {
+                return response.json();
+            }).then(res => {
+                console.log(res);
+                var str = '';
+                for (var i = 0; i < res.data.length; i++) {
+                    str += `
+                     <div class="js_good_book">
+                                <img src="${res.data[i].imgurl}" alt="">
+                                <a href="//item.winxuan.com/1201723885">${res.data[i].title} </a>
+                                <div class="js_price">
+                                    <div class="js_new">￥${res.data[i].newprice}</div>
+                                    <div class="js_old">￥${res.data[i].oldprice}</div>
+                                </div>
+                            </div> 
+                    `
+                    console.log(str);
+                    console.log(res.data[i].author);
+
+                }
+                js_good_books.innerHTML = str;
+
+            }).catch(err => {
+                console.log(err);
+            })
+        }
+    </script>
+</body>
+
+</html>

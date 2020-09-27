@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://pic.liesio.com/2020/09/16/e7c4e908c32e8.ico">
+    <link rel="bookmark" href="https://pic.liesio.com/2020/09/16/e7c4e908c32e8.ico">
+    <link rel="stylesheet" href="./css/c-head.css">
+    <link rel="stylesheet" href="./css/js_myWenxuan.css">
+    <link rel="stylesheet" href="./css/js_address.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <title>收货地址</title>
+</head>
+
+<body>
+    <div class="c_layout">
+        <header class="c_top">
+            <!-- 顶部导航 -->
+            <div class="w_top_w box">
+                <div class="c_top_n c_position" id="c_top_1">
+                  <div class="c_top_nav c_content">
+                    <ul class="c_link_left">
+                      <li id='w_user_welcom'>欢迎光临文轩网！</li>
+                      <li>
+                        <a href="./b_login.html" id='w_go' style="float: left;">请<span>&nbsp;&nbsp;登录</span></a>
+                        <a href="./b_sign-up.html" id="w_sign" style="float: left;">免费注册</a>
+                        <a href="./js_myWenxuan.html" id='w_username' style="float: left;margin-right: 20px;"></a>
+                        <a href="javascript:void(0)" id='w_quit'>退出登录</a>
+                      </li>
+                    </ul>
+                    <ul class="c_link_right">
+                      <li class="c_li_1">
+                        <a href="js_myWenxuan.html">
+                          <span>我的文轩</span>
+                          <i class="iconfont icon-jiantou"></i>
+                        </a>
+                        <div class="c_pop">
+                          <ul class="c_pop_item">
+                            <li class="c_item_list">
+                              <a href="js_myWenxuan.html">我的订单</a>
+                            </li>
+                             <li class="c_item_list">
+                              <a href="./b_account.html" id="w_count">账号设置</a>
+                            </li>                    
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="c_li_2">
+                        <a href="./z_index.html">
+                          <span>企业采购</span>
+                        </a>
+                      </li>
+                      <li class="c_li_3">
+                        <a href="#">
+                          <span>客户服务</span>
+                          <i class="iconfont icon-jiantou"></i>
+                        </a>
+                        <div class="c_pop">
+                          <ul class="c_pop_item">
+                            <li class="c_item_list">
+                              <a href="./w_robat.html">在线客服</a>
+                            </li>
+                            <li class="c_item_list">
+                              <a href="./y_help.html">帮助中心</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="c-li_4">
+                        <a href="#">
+                          <span>手机文轩</span>
+                          <i class="iconfont icon-jiantou"></i>
+                        </a>
+                        <div class="c_pop c_pop_s">
+                          <div class="c_pop_item">
+                            <img src="https://static.winxuancdn.com/css/v2/images/m143.jpg" alt="">
+                            <a href="#">扫一扫&nbsp;&nbsp;文轩手机购物></a>
+                          </div>
+                          <div class="c_pop_item">
+                            <img src="https://static.winxuancdn.com/css/v2/images/code2.png" alt="">
+                            <a href="#">电子书&nbsp;&nbsp;客户端></a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </header>
+    </div>
+    <div class="w_top_wrap">
+        <div class="w_top_content">
+            <div class="w_top_logo">
+                <a href="./c_head.html">
+                    <img src="https://static.winxuancdn.com/css/v2/images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="w_top_ul">
+                <ul>
+                    <li class="w_top_item"><a href="js_myWenxuan.html">我的文轩</a></li>
+                    <li class="w_top_item"><a href="b_account.html">账号设置</a></li>
+                    <li class="w_top_item"><a href="./address.html">管理收货地址</a></li>
+                    <li class="w_top_item"><a href="./w_robat.html">在线客服</a></li>
+                </ul>
+            </div>
+            
+            <!-- 购物车 -->
+            <div class="w_top_cart">
+                <a href="./b_car.html" target="_blank">
+                    <div class="w_top_cart_wrap">
+                        <b></b>
+                        <label class="w_cart">购物车</label>
+                        <span class="w_outline"></span>
+                        <span class="w_outline"></span>
+                        <span class="w_overlayout"></span>
+                        <div class="w_cart_num" id="num"> 0 </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="js_content">
+            <!-- 左边列表内容部分 -->
+            <div class="js_ctt_left">
+                <div class="js_line"></div>
+                <ul class="js_list">
+                    <li class="js_list_title">账号设置</li>
+                    <li class="js_list_item"><a href="./address.html">收货地址</a></li>
+                    <li class="js_list_item"><a href="./b_account.html">账号设置</a></li>
+                </ul>
+                <div class="js_line"></div>
+                <ul class="js_list">
+                    <li class="js_list_title">资产中心</li>
+                    <li class="js_list_item"><a href="./z_index.html">购书卡</a></li>
+                </ul>
+                <div class="js_line"></div>
+                <ul class="js_list">
+                    <li class="js_list_title">商品记录</li>
+                    <li class="js_list_item"><a href="./z_collect.html">收藏的商品</a></li>
+                </ul>
+                
+                <div class="js_line"></div>
+                <ul class="js_list">
+                    <li class="js_list_title">帮助中心</li>
+                    <li class="js_list_item"><a href="./w_robat.html">在线客服</a></li>
+                    <li class="js_list_item"><a href="./y_help.html">帮助中心</a></li>
+                </ul>
+                <div class="js_line"></div>
+            </div>
+            <!-- 右边内容部分 -->
+            <div class="js_ctt_right">
+                <div class="js_address">
+                    <div class="js_tags">
+                        <div class="js_tag">我的收货地址</div>
+                    </div>
+                    <!-- 新增收货地址时 -->
+                    <p class="js_null">现有收货地址<span class="js_null2">(<span id="js_null3">新增收货地址</span>)</span>
+                    </p>
+                    <div id="js_adderss_user">
+                        <!-- <table>
+                                <tr>
+                                    <td>收获地址</td>
+                                    <td>联系电话</td>
+                                    <td>姓名</td>
+                                </tr>
+                                <tr>
+                                    <td>收获地址</td>
+                                    <td>联系电话</td>
+                                    <td>姓名</td>
+                                </tr>
+                            </table> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="js_mask">
+        <div id="js_add">
+            <div class="js_add_top">
+                <span>收货地址管理</span>
+                <div class="js_close">×</div>
+            </div>
+            <div class="js_add_ctt">
+                <p><span class="js_title"><span class="js_point">* </span>收货人</span><input id="ipt1" type="text"><span class="js_warning">收货人姓名,由2-30个字符组成,如：张三</span></p>
+                <p><span class="js_title"><span class="js_point">* </span>地址</span><input id="ipt2" style="width: 300px;" type="text"><span class="js_warning">地址由4-50字符组成</span></p>
+                <p><span class="js_title">邮编</span><input id="ipt3" type="text"><span class="js_warning">请输入6位邮编</span></p>
+                <p><span class="js_title"><span class="js_point">* </span>手机号码</span><input id="ipt4" type="text"><span class="js_desc">  用于发货或送货通知</span><span class="js_warning">请输入11位手机号码</span></p>
+                <p><span class="js_title"><span class="js_point">* </span>固定电话</span><input id="ipt5" type="text"><span class="js_desc">  用于送货通知</span><span class="js_warning">格式:2到4位区号-6位固话号码</span></p>
+                <p><span class="js_title"><span class="js_point">* </span>电子邮箱</span><input id="ipt6" type="email"><span class="js_desc">  用于接收订单执行状态提醒邮件</span><span class="js_warning">请按Email格式输入</span></p>
+                <div id="js_ok">保存收获地址</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+         const w_sign = document.getElementById('w_sign');
+        const w_username = document.getElementById('w_username');
+        const w_quit = document.getElementById('w_quit');
+        const w_user_welcom = document.getElementById('w_user_welcom');
+        const w_count = document.getElementById('w_count');
+        if (localStorage.getItem('admin') == null) {
+            w_go.style.display = 'block';
+            w_sign.style.display = 'block';
+            w_quit.style.display = 'none';
+            w_username.style.display = 'none';
+        } else {
+            var w_user_txt = localStorage.getItem('admin')
+            w_go.style.display = 'none';
+            w_sign.style.display = 'none';
+            w_quit.style.display = 'block';
+            w_username.style.display = 'block';
+            w_username.innerHTML = w_user_txt;
+            w_user_welcom.innerHTML = '您好';
+        }
+        w_username.onclick = function () {
+            w_username.href = './js_myWenxuan.html?admin=' + w_user_txt;
+        }
+        w_count.onclick = function () {
+            w_count.href = './b_account.html?admin=' + w_user_txt;
+        }
+        w_quit.onclick = function () {
+            w_go.style.display = 'block';
+            w_sign.style.display = 'block';
+            w_quit.style.display = 'none';
+            w_username.style.display = 'none';
+            localStorage.removeItem('admin');
+            var nums11 = document.querySelector('#num');
+            var sum11 = function () {
+                if (localStorage.getItem('admin') == null) {
+                    // console.log('没有登陆');
+                    nums11.style.opacity = '0'
+                } else {
+                    var admin = localStorage.getItem('admin')
+                    // console.log('已登陆');
+                    fetch('http://localhost:3000/car_num?user=' + admin).then(response => {
+                        return response.json()
+                    }).then(res => {
+                        // console.log(res[0].nums);
+                        nums11.innerHTML = res[0].nums
+                    }).catch(err => {
+                        console.log(err)
+                    })
+                }
+            }
+            sum11();
+        }
+        // 导航上的登录接口 end
+        function get(url) {
+            return new Promise((resolve, reject) => {
+                var xhr = new XMLHttpRequest()
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        resolve(JSON.parse(xhr.responseText))
+                    } else if (xhr.readyState === 4 && xhr.status === 404) {
+                        reject()
+                    }
+                }
+                xhr.open('GET', url, true)
+                xhr.send()
+            })
+        }
+        // 点击出现弹窗
+        var one = document.getElementById('js_null3');
+        var mask = document.getElementById('js_mask')
+        one.onclick = function() {
+            mask.style.display = "block"
+        }
+
+        // 关闭弹窗
+        function close() {
+            mask.style.display = "none"
+        }
+
+        // 点击错号关闭
+        var js_close = document.getElementsByClassName('js_close')[0];
+        js_close.onclick = function() {
+            close();
+            js_warning.forEach(item => {
+                item.style.display = 'none'
+            })
+        }
+
+        // 保存收货地址
+        var ipt1 = document.getElementById('ipt1');
+        var ipt2 = document.getElementById('ipt2');
+        var ipt3 = document.getElementById('ipt3');
+        var ipt4 = document.getElementById('ipt4');
+        var ipt5 = document.getElementById('ipt5');
+        var ipt6 = document.getElementById('ipt6');
+
+        var reg1 = /^[\u4e00-\u9fa5]{2,30}$/; //两到三十个汉字！
+        var reg2 = /^[\u4e00-\u9fa50-9]{4,50}$/; //四到五十个汉字和数字！
+        var reg3 = /^\d{6}$/; //6位数字！
+        var reg4 = /^1[0-9]{10}$/; //1开头,共11位数字！
+        var reg5 = /^\d{2,4}-\d{6}$/ //2到4位区号-6位固话号码！
+        var reg6 = /^([0-9A-Za-z\-_\.]+)@([0-9a-z]+\.[a-z]{2,3}(\.[a-z]{2})?)$/g
+
+        //点击提交时验证
+        var js_ok = document.getElementById('js_ok')
+        var js_warning = document.querySelectorAll('.js_warning')
+        js_ok.onclick = function() {
+            if (reg1.test(ipt1.value) == true && reg2.test(ipt2.value) == true && reg3.test(ipt3.value) == true && reg4.test(ipt4.value) == true && reg5.test(ipt5.value) == true && reg6.test(ipt6.value) == true) {
+                var val1 = ipt1.value;
+                var val2 = ipt2.value;
+                var val3 = ipt3.value;
+                var val4 = ipt4.value;
+                var val5 = ipt5.value;
+                var val6 = ipt6.value;
+                get('http://localhost:3000/js_address_add?name=' + val1 + '&address=' + val2 + '&youbian=' + val3 + '&number=' + val4 + '&number2=' + val5 + '&email=' + val6)
+                console.log(val1, val2, val4)
+                mask.style.display = "none";
+                ipt1.value = null;
+                ipt2.value = null;
+                ipt3.value = null;
+                ipt4.value = null;
+                ipt5.value = null;
+                ipt6.value = null;
+                alert('保存成功');
+                get('http://localhost:3000/js_address').then(res => {
+                    var js_user = document.getElementById('js_adderss_user')
+                    js_user.innerHTML = ''
+                    for (var i = 0; i < res.data.length; i++) {
+                        js_user.innerHTML += `
+                            <table>
+                                <tr>
+                                    <td class="js_td1">收获地址</td>
+                                    <td class="js_td1">联系电话</td>
+                                    <td class="js_td1">收货人姓名</td>
+                                </tr>
+                                <tr>
+                                    <td>${res.data[i].address}</td>
+                                    <td>${res.data[i].number}</td>
+                                    <td>${res.data[i].name}</td>
+                                </tr>
+                            </table>
+            `
+                    }
+                })
+            } else {;
+                js_warning.forEach(item => {
+                    item.style.display = 'inline-block'
+                })
+            }
+        }
+
+        get('http://localhost:3000/js_address').then(res => {
+            var js_user = document.getElementById('js_adderss_user')
+            for (var i = 0; i < res.data.length; i++) {
+                js_user.innerHTML += `
+                            <table>
+                                <tr>
+                                    <td class="js_td1">收获地址</td>
+                                    <td class="js_td1">联系电话</td>
+                                    <td class="js_td1">收货人姓名</td>
+                                </tr>
+                                <tr>
+                                    <td>${res.data[i].address}</td>
+                                    <td>${res.data[i].number}</td>
+                                    <td>${res.data[i].name}</td>
+                                </tr>
+                            </table>
+            `
+            }
+        })
+
+        // 购物车小图标数字
+        var nums11 = document.querySelector('#num');
+        var sum11 = function() {
+            if (localStorage.getItem('admin') == null) {
+                // console.log('没有登陆');
+                nums11.style.opacity = '0'
+            } else {
+                var admin = localStorage.getItem('admin')
+                    // console.log('已登陆');
+                fetch('http://localhost:3000/car_num?user=' + admin).then(response => {
+                    return response.json()
+                }).then(res => {
+                    // console.log(res[0].nums);
+                    nums11.innerHTML = res[0].nums
+                }).catch(err => {
+                    console.log(err)
+                })
+            }
+        }
+
+        sum11();
+    </script>
+</body>
+
+</html>
