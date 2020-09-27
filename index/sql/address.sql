@@ -1,7 +1,7 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : root2
+ Source Server         : demo
  Source Server Type    : MySQL
  Source Server Version : 50726
  Source Host           : localhost:3306
@@ -11,7 +11,7 @@
  Target Server Version : 50726
  File Encoding         : 65001
 
- Date: 25/09/2020 17:38:36
+ Date: 27/09/2020 15:34:58
 */
 
 SET NAMES utf8mb4;
@@ -36,13 +36,5 @@ CREATE TABLE `address`  (
 -- ----------------------------
 -- Records of address
 -- ----------------------------
-INSERT INTO `address` VALUES ('张三', '河南郑州中原区玉兰街', '123456', '12345678910', '1234-123456', '1234567890@qq.com', 1, '默认地址');
-INSERT INTO `address` VALUES ('王五', '科学大道', '455000', '12345678910', '1234-123456', '123@qq.com', 7, '');
-INSERT INTO `address` VALUES ('李四', '哈哈哈哈哈哈', '123456', '12345678910', '1234-123456', '1234863158@qq.com', 6, '');
-INSERT INTO `address` VALUES ('哈哈', '哈哈哈哈哈哈', '123456', '12345678910', '1234-123456', '1234863158@qq.com', 5, '');
-INSERT INTO `address` VALUES ('李四', '哈哈哈哈哈哈', '123456', '12345678910', '1234-123456', '11111@qq.com', 8, '');
-INSERT INTO `address` VALUES ('李三', '哈哈哈哈哈哈', '123456', '12345678910', '1234-123456', '1234863158@qq.com', 9, '');
-INSERT INTO `address` VALUES ('李四', '哈哈哈哈哈哈', '123456', '12345678910', '1234-123456', '1234863158@qq.com', 10, '');
-INSERT INTO `address` VALUES ('阿萨德', '哈哈哈哈哈哈', '123456', '12345678910', '1234-123456', '1234863158@qq.com', 11, '');
 
 SET FOREIGN_KEY_CHECKS = 1;

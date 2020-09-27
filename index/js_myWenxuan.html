@@ -320,30 +320,30 @@
             })
         }
         //获取收藏的书籍
-        function getData2(key, el) {
-            get('http://localhost:3000/js_collection').then(res => {
-                // console.log(res)
-                el.innerHTML = ''
-                res.data.forEach(item => {
-                    el.innerHTML += `
-                <div class="js_good_book">
-                        <img class="lazyload" data-src="${item.img}" alt="">
-                        <a href="${item.title_url}">${item.title}</a>
-                        <div class="js_author">${item.author}</div>
-                        <div class="js_price">
-                            <div class="js_new">${item.new}</div>
-                            <div class="js_old">${item.old}</div>
-                        </div>
-                    </div>
-                `
-                })
-            }).catch(err => {
-                console.log(err)
+        // function getData2(key, el) {
+        //     get('http://localhost:3000/js_collection').then(res => {
+        //         // console.log(res)
+        //         el.innerHTML = ''
+        //         res.data.forEach(item => {
+        //             el.innerHTML += `
+        //         <div class="js_good_book">
+        //                 <img class="lazyload" data-src="${item.img}" alt="">
+        //                 <a href="${item.title_url}">${item.title}</a>
+        //                 <div class="js_author">${item.author}</div>
+        //                 <div class="js_price">
+        //                     <div class="js_new">${item.new}</div>
+        //                     <div class="js_old">${item.old}</div>
+        //                 </div>
+        //             </div>
+        //         `
+        //         })
+        //     }).catch(err => {
+        //         console.log(err)
 
-            })
-        }
-        var collection = document.querySelector('.js_collection .js_good_books');
-        getData2('collection', collection);
+        //     })
+        // }
+        // var collection = document.querySelector('.js_collection .js_good_books');
+        // getData2('collection', collection);
 
         // 购物车小图标数字
         var nums11 = document.querySelector('#num');
@@ -374,7 +374,7 @@
 
         if (w_admins != '') {
             console.log(1234);
-            fetch(`http://localhost:3000/pz_collection?admin=${w_admins}`).then(response => {
+            fetch(`http://localhost:3000/k_collect?admin=${w_admins}`).then(response => {
                 return response.json();
             }).then(res => {
                 console.log(res);

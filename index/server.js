@@ -180,22 +180,23 @@ app.get('/updatePsw', (req, res) => {
         res.json(obj)
     })
 });
-// 收藏
-// app.get('/js_collection', (req, res) => {
-//   connection.query(`select * from b_collection where admin=${req.query.tt} limit 0,4;`, (err, result) => {
-//     const obj = {
-//       status: 200,
-//       data: result
-//     }
-//     res.json(obj)
-//   })
-// })
 
 
-app.get('/pz_collection', (req, res) => {
-    // console.log(11111, req.query.id) // 可以获取到前端传递的参数值   get请求
-    // console.log(req.body.id)   // 可以获取到前端传递的参数值    post请求
-    connection.query(`select * from b_collection where admin=${req.query.admin} limit 4;`, (err, result) => {
+// app.get('/pz_collection', (req, res) => {
+//     connection.query(`select * from b_collection where admin=${req.query.admin} limit 4;`, (err, result) => {
+//         const obj = {
+//             status: 200,
+//             data: result
+//         }
+//         res.json(obj)
+//         console.log(obj);
+
+//     })
+// });
+
+
+app.get('/k_collect', (req, res) => {
+    connection.query(`select * from b_collection where admin='${req.query.admin}' limit 4`, (err, result) => {
         const obj = {
             status: 200,
             data: result
@@ -456,6 +457,50 @@ app.get('/addcollection', (req, res) => {
 app.get('/removecollection', (req, res) => {
     connection.query('delete from b_collection where id=' + req.query.id, function(err, result) {
         res.json(result)
+    })
+});
+
+// 添加收货地址接口
+app.get('/js_address_add', (req, res) => {
+    connection.query(`insert into address (name,address,youbian,number,number2,email) values('${req.query.name}','${req.query.address}','${req.query.youbian}','${req.query.number}','${req.query.number2}','${req.query.email}');`, (err, result) => {
+        const obj = {
+            status: 200,
+            data: result
+        }
+        res.json(obj)
+    })
+});
+
+// 获取收货地址信息接口
+app.get('/js_address', (req, res) => {
+    connection.query(`select * from address;`, (err, result) => {
+        const obj = {
+            status: 200,
+            data: result
+        }
+        res.json(obj)
+    })
+});
+
+// 取消其他默认
+app.get('/js_address3', (req, res) => {
+    connection.query(`update address set def='' where def='默认地址';`, (err, result) => {
+        const obj = {
+            status: 200,
+            data: '设置成功'
+        }
+        res.json(obj)
+    })
+})
+
+// 设置唯一默认
+app.get('/js_address2', (req, res) => {
+    connection.query(`update address set def='默认地址' where id=${req.query.id};`, (err, result) => {
+        const obj = {
+            status: 200,
+            data: '设置成功'
+        }
+        res.json(obj)
     })
 });
 

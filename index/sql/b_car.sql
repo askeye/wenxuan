@@ -3,15 +3,15 @@
 
  Source Server         : demo
  Source Server Type    : MySQL
- Source Server Version : 80012
+ Source Server Version : 50726
  Source Host           : localhost:3306
  Source Schema         : wenxuan
 
  Target Server Type    : MySQL
- Target Server Version : 80012
+ Target Server Version : 50726
  File Encoding         : 65001
 
- Date: 26/09/2020 09:56:05
+ Date: 27/09/2020 15:35:10
 */
 
 SET NAMES utf8mb4;
@@ -30,7 +30,7 @@ CREATE TABLE `b_car`  (
   `book_id` int(11) NULL DEFAULT NULL,
   `admin` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 31 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 37 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of b_car

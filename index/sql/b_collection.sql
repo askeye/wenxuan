@@ -1,7 +1,7 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : localhost
+ Source Server         : demo
  Source Server Type    : MySQL
  Source Server Version : 50726
  Source Host           : localhost:3306
@@ -11,7 +11,7 @@
  Target Server Version : 50726
  File Encoding         : 65001
 
- Date: 26/09/2020 16:40:12
+ Date: 27/09/2020 15:35:20
 */
 
 SET NAMES utf8mb4;
@@ -31,11 +31,12 @@ CREATE TABLE `b_collection`  (
   `oldprice` float(10, 2) NULL DEFAULT NULL,
   `publish` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 50 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = MyISAM AUTO_INCREMENT = 56 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of b_collection
 -- ----------------------------
-INSERT INTO `b_collection` VALUES (47, '论语译注（简体字本）', 26.00, 'https://img2.winxuancdn.com/2295/1201562295_49_800x800.jpg?1541136965503', 211, '987654321', 19.50, '2018年11月');
+INSERT INTO `b_collection` VALUES (54, '儿童学习用表（加减法口算表）', 10.00, 'https://img2.winxuancdn.com/8629/1201488629_22_1.jpg?1520705489291', 84, 'kouqi1', 5.00, '2019年9月');
+INSERT INTO `b_collection` VALUES (55, '保育员：初级技能 中级技能 不错技能', 14.00, 'https://img2.winxuancdn.com/4699/10054699_800x800.jpg?1558024843558', 320, 'kouqi1', 10.00, '2004-09-01');
 
 SET FOREIGN_KEY_CHECKS = 1;

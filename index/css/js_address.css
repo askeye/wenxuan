@@ -132,8 +132,12 @@
     border-collapse: collapse;
 }
 
+.table {
+    position: relative;
+}
+
 #js_adderss_user td {
-    width: 309px;
+    width: 270px;
     padding: 0 10px;
     border: 1px solid #bbbbbb;
     overflow: hidden;
@@ -141,6 +145,25 @@
     white-space: nowrap;
 }
 
+#js_adderss_user .js_last {
+    width: 30px;
+    border: 0;
+}
+
 .js_td1 {
-    background-color: #cccccc;
+    background-color: #e4393c77;
+}
+
+.js_default {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 14px;
+    background: #e4393cad;
+    text-align: center;
+    padding-bottom: 4px;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    top: 0;
 }

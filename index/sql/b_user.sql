@@ -3,15 +3,15 @@
 
  Source Server         : demo
  Source Server Type    : MySQL
- Source Server Version : 80012
+ Source Server Version : 50726
  Source Host           : localhost:3306
  Source Schema         : wenxuan
 
  Target Server Type    : MySQL
- Target Server Version : 80012
+ Target Server Version : 50726
  File Encoding         : 65001
 
- Date: 26/09/2020 09:55:55
+ Date: 27/09/2020 15:35:40
 */
 
 SET NAMES utf8mb4;
@@ -28,7 +28,7 @@ CREATE TABLE `b_user`  (
   `date` longtext CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
   `id` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 16 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 17 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of b_user
